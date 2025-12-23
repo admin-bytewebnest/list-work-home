@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HW-2</title>
+    <link rel="stylesheet" href="#" />
+  </head>
+  <body>
+    
+    <header>
+      <div class="container">
+        <h2><span>Учебный блог</span></h2>
+        <nav>
+          <div>
+            <a href="#">Обо мне</a>
+            <a href="#">Статья</a>
+            <a href="#">Код</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <aside>
+      <div>
+        <h5>Полезное</h5>
+        <ul>
+          <li><a href="#">Статьи по HTML</a></li>
+          <li><a href="#">CSS-трюки</a></li>
+          <li><a href="#">JS для начинающих</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <main>
+      <div class="container">
+        <section>
+          <h3>Обо мне</h3>
+          <p>
+            <strong>Я люблю программировать</strong> и учусь верстке. <em>Практика</em> важнее теории!
+            <br/>
+            <mark>Моя цель</mark> - стать фронтенд-разработчиком.
+          </p>
+        </section>
+      </div>
+
+      <picture>
+        <source media="(max-width: 600px)" srcset="Block-600.png"></source>
+        <source media="(max-width: 1200px)" srcset="Block-1200.png"></source>
+        <img src="../HW3/Block-1200-up.png" alt="Картинка не загрузилась">
+      </picture>
+
+      <section>
+        <article>
+          <header>
+          <h2>Первая статья</h2>
+          </header>
+          <p>Вещи, которые я изучаю:</p>
+          <ol>
+            <li>HTML <small>(структура)</small></li>
+            <li>CSS <small>(стилизация)</small></li>
+            <li>JavaScript <small>(логика)</small></li>
+          </ol>
+          <footer>
+          <blockquote>«Каждый день по строке кода — и ты уже разработчик.»</blockquote>
+          </footer>
+        </article>
+      </section>
+
+      <section>
+        <header>
+          <h2>Пример кода</h2>
+        </header>
+        <pre>
+          <code>
+            &lt;h1&gt;Привет, блог!&lt;/h1&gt;
+            &lt;p&gt;Это тестовый абзац&lt;/p&gt;
+          </code>
+        </pre>
+        <button>Кнопка</button>
+      </section>
+
+      <footer>
+        <h5>Контакты</h5>
+        <address>
+          <p>Email: <a href="mailto:student@example.com">student@example.com</a></p>
+          <p>Telegram: <a href="@frontend_student">@frontend_student</a></p>
+        </address>
+        <p>&copy; 2025 Учебный блог</p>
+      </footer>
+    </main>
+  </body>
+</html>

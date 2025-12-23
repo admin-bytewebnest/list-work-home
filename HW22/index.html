@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header"></header>
+      <main class="main">
+        <div class="container">
+          <section class="order">
+            <div class="order__header">
+              <h1 class="order__title">Форма заказа доставки еды</h1>
+              <p class="order__subtitle">
+                Заполните поля ниже-и попрактикуйтесь в использовании всех HTML input-
+                <br />
+                типов. Это учебная форма,сервер обрабатывать данные не будет.
+              </p>
+
+              <div class="order__tags">
+                <span class="order__tag">#html</span>
+                <span class="order__tag">#css</span>
+                <span class="order__tag">#form-practice</span>
+                <span class="order__tag">#frontend</span>
+              </div>
+            </div>
+
+            <form action="#" class="order__form" method="post">
+              <div class="order__grid">
+
+                <div class="order__name">
+                  <label for="name">Имя клиента</label>
+                  <input type="text" id="name" required placeholder="Например: Богдан" />
+                </div>
+
+                <div class="order__url">
+                  <label for="url">Ссылка на профиль доставки</label>
+                  <input type="url" id="url" required placeholder="https://example.com/profile" />
+                </div>
+
+                <div class="order__search">
+                  <label for="search">Найти любимое блюдо</label>
+                  <input type="search" id="search" required placeholder="Например: суши, бургер, паста..." />
+                </div>
+
+                <div class="order__password">
+                  <label for="password">Пароль для профиля (тест)</label>
+                  <input type="password" id="password" required placeholder="Введите пароль" />
+                </div>
+
+                <div class="order__datetime">
+                  <label for="datetime">Желаемое время доставки</label>
+                  <input type="datetime-local" id="datetime" required />
+                </div>
+
+                <div class="order__week">
+                  <label for="week">Неделя ближайшего заказа</label>
+                  <input type="week" id="week" required />
+                </div>
+
+                <div class="order__email">
+                  <label for="email">Контактный email</label>
+                  <input type="email" id="email" required placeholder="you@example.com" />
+                </div>
+
+                <div class="order__phone">
+                  <label for="phone">Телефон для связи с курьером</label>
+                  <input type="tel" id="phone" required placeholder="+38 (0XX) XXX-XX-XX" />
+                </div>
+
+                <div class="order__number">
+                  <label for="number">Желаемое время доставки</label>
+                  <input type="number" id="number" value="1" min="1" required />
+                </div>
+
+                <div class="order__date">
+                  <label for="date">Дата доставки</label>
+                  <input type="date" id="date" required />
+                </div>
+
+                <div class="order__month">
+                  <label for="month">Месяц подписки на доставку</label>
+                  <input type="month" id="month" required />
+                </div>
+
+                <div class="order__time">
+                  <label for="time">Время, когда вам удобно получить заказ</label>
+                  <input type="time" id="time" required />
+                </div>
+
+                <div class="order__color">
+                  <label for="color">Цвет пакета (просто тест)</label>
+                  <input type="color" id="color" required />
+                </div>
+
+                <div class="order__file">
+                  <label for="file">Прикрепить файл (например,список покупок)</label>
+                  <input type="file" id="file" name="file" required />
+                </div>
+              </div>
+
+              <fieldset class="order__fieldset">
+                <legend class="order__legend">Тип блюд</legend>
+
+                <div class="order__checkbox">
+                  <input type="checkbox" id="pizza" />
+                  <label for="pizza">Пицца</label>
+                </div>
+
+                <div class="order__checkbox">
+                  <input type="checkbox" id="sushi" />
+                  <label for="sushi">Суши</label>
+                </div>
+
+                <div class="order__checkbox">
+                  <input type="checkbox" id="burger" />
+                  <label for="burger">Бургеры</label>
+                </div>
+
+                <div class="order__checkbox">
+                  <input type="checkbox" id="salad" />
+                  <label for="salad">Салаты</label>
+                </div>
+              </fieldset>
+
+              <fieldset class="order__fieldset">
+                <legend class="order__legend">Тип доставки</legend>
+
+                <div class="order__radio">
+                  <input type="radio" id="courier" name="delivery" checked />
+                  <label for="courier">Курьер</label>
+                </div>
+
+                <div class="order__radio">
+                  <input type="radio" id="pickup" name="delivery" />
+                  <label for="pickup">Самовывоз</label>
+                </div>
+              </fieldset>
+
+              <div class="order__range">
+                <label for="range">Степень голода</label>
+                <input type="range" id="range" min="0" max="10" value="5" />
+              </div>
+
+              <div class="order__comment">
+                <label for="comment">Комментарий к заказу</label>
+                <textarea name="order__textarea" id="comment" placeholder="Например: не добавлять лук"></textarea>
+              </div>
+
+              <div class="order__checkbox">
+                <input type="checkbox" id="confirm" />
+                <label for="confirm">Я подтверждаю, что это тестовая форма</label>
+              </div>
+
+              <button type="submit" class="order__button">Отправить заказ</button>
+            </form>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

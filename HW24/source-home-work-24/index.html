@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Таблица запчастей</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      body {
+        font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+        font-size: 12px;
+        letter-spacing: 1px;
+      }
+      .wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    width: 1830px;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 30px;
+    background-color: #eddaff;
+}
+table {
+  background-color: white;
+}
+th,td {
+  text-align: center;
+}
+.end {
+  text-align: end;
+}
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="wrapper-table">
+        <table class="table">
+          <colgroup>
+            <col width="100">
+            <col>
+            <col>
+            <col>
+            <col>
+            <col width="100">
+          </colgroup>
+          <caption><h1>Таблица запчастей</h1></caption>
+          <thead>
+            <tr>
+              <td></td>
+              <th>Имя клиента</th>
+              <th>Название товара</th>
+              <th>Картинка товара</th>
+              <th>Количество</th>
+              <th>Цена</th>
+              <th>Штрих-код / QR-код</th>
+            </tr>
+          </thead>
+  
+          <tbody>
+            <tr height="90">
+              <th>1</th>
+              <td ><a href="#">Станислав</a></td>
+              <td><a href="#">Шина</a></td>
+              <td><img src="/HW24/source-home-work-24/images/tire.pn" alt="Шина" /></td>
+              <td>4шт.</td>
+              <td>NaN грн</td>
+              <td><img src="/HW24/source-home-work-24/images/tire.pn" alt="Штрих-код" /></td></td>
+            </tr>
+  
+            <tr height="90">
+              <th>2</th>
+              <td><a href="#">Станислав</a></td>
+              <td><a href="#">Диск</a></td>
+              <td><img src="/HW24/source-home-work-24/images/tire.pn" alt="Диск" /></td>
+              <td>4шт.</td>
+              <td>NaN грн</td>
+              <td><img src="/HW24/source-home-work-24/images/tire.pn" alt="Штрих-код" /></td></td>
+            </tr>
+  
+            <tr height="90">
+              <th>3</th>
+              <td><a href="#">Станислав</a></td>
+              <td><a href="#">Тормоза</a></td>
+              <td><img src="./images/brakes.pn" alt="Тормоза" /></td>
+              <td>4шт.</td>
+              <td>NaN грн</td>
+              <td><img src="./images/barcode.pn" alt="Штрих-код" /></td></td>
+            </tr>
+          </tbody>
+  
+          <tfoot>
+            <tr>
+              <th>Итого</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>NaN грн</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div class="wrapper-table">
+
+      <div class="wrapper-table">
+        <table class="table" style="margin-top:20px;">
+           <colgroup>
+            <col width="100">
+            <col>
+            <col>
+            <col>
+            <col>
+            <col width="100">
+          </colgroup>
+          <caption><h1>Таблица запчастей</h1></caption>
+          <thead style="background-color: #310062; color: white;">
+            <tr>
+              <th>№</th>
+              <th>Имя клиента</th>
+              <th>Название товара</th>
+              <th>Картинка товара</th>
+              <th>Количество</th>
+              <th>Цена</th>
+              <th>Штрих-код / QR-код</th>
+            </tr>
+          </thead>
+  
+          <tbody>
+            <tr>
+              <th>1</th>
+              <td><a href="#">Станислав</a></td>
+              <td><a href="#">Шина</a></td>
+              <td><img src="./images/tire.png" alt="Шина" /></td>
+              <td>4шт.</td>
+              <td>3 200 грн</td>
+              <td><img src="./images/barcode.png" alt="Штрих-код" /></td></td>
+            </tr>
+  
+            <tr>
+              <th>2</th>
+              <td><a href="#">Станислав</a></td>
+              <td><a href="#">Диск</a></td>
+              <td><img src="./images/disk.png" alt="Диск" /></td>
+              <td>4шт.</td>
+              <td>8 000 грн</td>
+              <td><img src="./images/barcode.png" alt="Штрих-код" /></td></td>
+            </tr>
+  
+            <tr>
+              <th>3</th>
+              <td><a href="#">Станислав</a></td>
+              <td><a href="#">Тормоза</a></td>
+              <td><img src="./images/brakes.png" alt="Тормоза" /></td>
+              <td>4шт.</td>
+              <td>3 000 грн</td>
+              <td><img src="./images/barcode.png" alt="Штрих-код" /></td></td>
+            </tr>
+          </tbody>
+  
+          <tfoot>
+            <tr>
+              <th>Итого</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>14 200 грн</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div class="wrapper-table">
+
+      <div class="wrapper-table">
+        <table class="table" style="margin-top:20px;">
+           <colgroup>
+            <col width="100">
+            <col>
+            <col>
+            <col>
+            <col>
+            <col width="100">
+          </colgroup>
+          <caption><h1>Таблица запчастей</h1></caption>
+          <thead style="background-color: #310062; color: white;">
+            <tr>
+              <th>№</th>
+              <th>Имя клиента</th>
+              <th>Название товара</th>
+              <th>Картинка товара</th>
+              <th>Количество</th>
+              <th>Цена</th>
+              <th>Штрих-код / QR-код</th>
+            </tr>
+          </thead>
+  
+          <tbody>
+            <tr>
+              <th>1</th>
+              <td style="background-color: #c2b3d1;"><a href="#">Станислав</a></td>
+              <td><a href="#">Шина</a></td>
+              <td><img src="./images/tire.png" alt="Шина" /></td>
+              <td>4шт.</td>
+              <td>3 200 грн</td>
+              <td><img src="./images/barcode.png" alt="Штрих-код" /></td></td>
+            </tr>
+  
+            <tr>
+              <th>2</th>
+              <td style="background-color: #c2b3d1;"><a href="#">Станислав</a></td>
+              <td><a href="#">Диск</a></td>
+              <td><img src="./images/disk.png" alt="Диск" /></td>
+              <td>4шт.</td>
+              <td>8 000 грн</td>
+              <td><img src="./images/barcode.png" alt="Штрих-код" /></td></td>
+            </tr>
+  
+            <tr>
+              <th>3</th>
+              <td style="background-color: #c2b3d1;"><a href="#">Станислав</a></td>
+              <td><a href="#">Тормоза</a></td>
+              <td><img src="./images/brakes.png" alt="Тормоза" /></td>
+              <td>4шт.</td>
+              <td>3 000 грн</td>
+              <td><img src="./images/barcode.png" alt="Штрих-код" /></td></td>
+            </tr>
+          </tbody>
+  
+          <tfoot>
+            <tr>
+              <th>Итого</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>14 200 грн</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div class="wrapper-table">
+
+      <div class="wrapper-table">
+        <table class="table" style="margin-top:20px;">
+           <colgroup>
+            <col width="100">
+            <col>
+            <col>
+            <col>
+            <col>
+            <col width="100">
+          </colgroup>
+          <caption><h1>Таблица запчастей</h1></caption>
+          <thead style="background-color: #310062; color: white;">
+            <tr>
+              <th>№</th>
+              <th>Имя клиента</th>
+              <th>Название товара</th>
+              <th>Картинка товара</th>
+              <th>Количество</th>
+              <th>Цена</th>
+              <th>Штрих-код / QR-код</th>
+            </tr>
+          </thead>
+  
+          <tbody>
+            <tr>
+              <th rowspan="3">1</th>
+              <td rowspan="3" style="background-color: #c2b3d1;"><a href="#">Станислав</a></td>
+              <td><a href="#">Шина</a></td>
+              <td><img src="./images/tire.png" alt="Шина" /></td>
+              <td>4шт.</td>
+              <td>3 200 грн</td>
+              <td style="background-color: #c2b3d1;"><img src="./images/barcode.png" alt="Штрих-код" /></td></td>
+            </tr>
+  
+            <tr>
+              <td><a href="#">Диск</a></td>
+              <td><img src="./images/disk.png" alt="Диск" /></td>
+              <td>4шт.</td>
+              <td>8 000 грн</td>
+              <td style="background-color: #c2b3d1;"><img src="./images/barcode.png" alt="Штрих-код" /></td></td>
+            </tr>
+  
+            <tr>
+              <td><a href="#">Тормоза</a></td>
+              <td><img src="./images/brakes.png" alt="Тормоза" /></td>
+              <td>4шт.</td>
+              <td>3 000 грн</td>
+              <td style="background-color: #c2b3d1;"><img src="./images/barcode.png" alt="Штрих-код" /></td></td>
+            </tr>
+          </tbody>
+  
+          <tfoot>
+            <tr>
+              <th>Итого</th>
+              <!-- <td ></td> -->
+              <!-- <td></td> -->
+              <!-- <td></td> -->
+              <!-- <td></td> -->
+              <!-- <td></td> -->
+              <td colspan="6" style="background-color:white" class="end">14 200 грн</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div class="wrapper-table">
+
+    </div>
+  </body>
+</html>
