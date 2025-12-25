@@ -77,6 +77,23 @@
 
 <!--20. Если формат иконки будет не .ico то какие изменения нужно внести />
     Ответ: 1. <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">  2. href="favicon.png" type="image/x-png"
+
+    Пример правильного кода:
+<head>
+    Классический 
+        <link rel="icon" href="/favicon.ico" sizes="any">
+
+    PNG-формат
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+
+    Современные браузеры
+        <link rel="icon" type="image/webp" sizes="32x32" href="/favicon.webp">
+
+    Apple
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+</head>
+
 -->
 
 <!-- ------------------------------ВОПРОСЫ ПО ТЕГАМ-------------------------------------- -->
