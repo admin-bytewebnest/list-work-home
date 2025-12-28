@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- .container>div>p -->
+    <div class="container">
+      <div>
+        <p></p>
+      </div>
+    </div>
+
+    <!-- .item+.item -->
+    <div class="item"></div>
+    <div class="item"></div>
+
+    <!-- div>p>span^div -->
+    <div>
+      <p><span></span></p>
+      <div></div>
+    </div>
+
+    <!-- ul>li*3 -->
+    <!-- умножаем на конкретное количество элементов -->
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+    <!-- .wrapper>(header.header>nav>a)+(main.main>section>h2.title)+(footer.footer>p*3) -->
+    <div class="wrapper">
+      <header class="header">
+        <nav><a href=""></a></nav>
+      </header>
+      <main class="main">
+        <section>
+          <h2 class="title"></h2>
+        </section>
+      </main>
+      <footer class="footer">
+        <p></p>
+        <p></p>
+        <p></p>
+      </footer>
+    </div>
+
+    <!-- .wrapper>(header.header>.container)+(main.main>.container)+(footer.footer>.container) -->
+    <div class="wrapper">
+      <header class="header">
+        <div class="container"></div>
+      </header>
+      <main class="main">
+        <div class="container"></div>
+      </main>
+      <footer class="footer">
+        <div class="container"></div>
+      </footer>
+    </div>
+
+    <!-- #submit -->
+    <div id="submit"></div>
+
+    <!-- p#submit -->
+    <p id="submit"></p>
+
+    <!-- .class1.class2.class3 -->
+    <div class="class1 class2 class3"></div>
+
+    <!-- div[class=container] -->
+    <div class="container"></div>
+
+    <!-- a[href=#] -->
+    <a href="#"></a>
+
+    <!-- ul>li.link$*3 -->
+    <ul>
+      <li class="link1"></li>
+      <li class="link2"></li>
+      <li class="link3"></li>
+      <!-- li.link$@4*3 -->
+      <li class="link4"></li>
+      <li class="link5"></li>
+      <li class="link6"></li>
+    </ul>
+
+    <!-- ul>li.link$$*10 -->
+    <ul>
+      <li class="link01"></li>
+      <li class="link02"></li>
+      <li class="link03"></li>
+      <li class="link04"></li>
+      <li class="link05"></li>
+      <li class="link06"></li>
+      <li class="link07"></li>
+      <li class="link08"></li>
+      <li class="link09"></li>
+      <li class="link10"></li>
+    </ul>
+
+    <!-- ul>li.link$@-10*10 -->
+    <ul>
+      <li class="link19"></li>
+      <li class="link18"></li>
+      <li class="link17"></li>
+      <li class="link16"></li>
+      <li class="link15"></li>
+      <li class="link14"></li>
+      <li class="link13"></li>
+      <li class="link12"></li>
+      <li class="link11"></li>
+      <li class="link10"></li>
+    </ul>
+
+    <!-- p{text} -->
+    <p>text</p>
+
+    <!-- a.text[href=#] -->
+    <a href="#" class="text"></a>
+
+    <!-- * - Умножение элементов
+    ^ - Подняться на уровень выше
+    + - Добавить тег друг под другом
+    > - Опуститься на уровень ниже или войти в тэг
+    $,$$ - Нумерование элементов автоматическое
+    @ - Продолжить нумерование элементов от конкретного числа
+    () - Группируем элементы в одну связку
+    [] - Назначить атрибуты. Имя плюс значение
+    {} - Добавить текст во внутрь тэга -->
+  </body>
+</html>

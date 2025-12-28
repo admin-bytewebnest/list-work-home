@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <form action="#" method="post">
+          <h2>Техподдержка</h2>
+          <fieldset>
+            <legend>Отправить запрос</legend>
+            <label for="name">
+              Ваше имя:
+              <input id="name" type="text" name="name" />
+            </label>
+            <br />
+            <label for="tel">
+              Введите телефон:
+              <input id="tel" type="tel" name="phone" />
+            </label>
+            <br />
+            <label for="email">
+              Введите почту:
+              <input id="email" type="email" name="email" />
+            </label>
+            <br />
+            <label for="issue">Опишите возникшую проблему</label>
+            <textarea name="issue" id="issue"></textarea>
+            <br />
+          </fieldset>
+
+          <fieldset>
+            <legend>Оборудование по которому нужна помощь</legend>
+            <label for="equipment">
+              Наименование оборудования
+              <input type="text" name="equipment" />
+            </label>
+            <br />
+            <label for="serial">
+              Серийный номер
+              <input type="number" name="serial" />
+            </label>
+            <br />
+            <label for="term">
+              Срок эксплуатации
+              <input type="date" name="term" />
+            </label>
+            <br />
+            <label for="description">Описание неисправности</label>
+            <textarea name="description" id="description"></textarea>
+            <br />
+            <label for="">Оборудование на гарантии</label>
+            <div>
+              <label for="oneWarranty">
+                <input type="radio" id="oneWarranty" name="warranty" value="Yes" />
+                Да
+              </label>
+              <label for="twoWarrantty">
+                <input type="radio" id="twoWarrantty" name="warranty" value="No" />
+                Нет
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Список требуемых услуг</legend>
+            <div class="services-left">
+              <label for="calibration">
+                <input id="calibration" type="checkbox" name="group" value="" />
+                Калибровка
+              </label>
+              <label for="calibration2">
+                <input id="calibration2" type="checkbox" name="group" />
+                Поверка
+              </label>
+              <label for="calibration3">
+                <input id="calibration3" type="checkbox" name="group" />
+                Диагностика
+              </label>
+              <label for="calibration4">
+                <input id="calibration4" type="checkbox" name="group" />
+                Ремонт
+              </label>
+              <label for="calibration5">
+                <input id="calibration5" type="checkbox" name="group" />
+                Настройка
+              </label>
+              <label for="calibration6">
+                <input id="calibration6" type="checkbox" name="group" />
+                Модификация
+              </label>
+              <br />
+              <button type="submit" class="services">Отправить</button>
+            </div>
+
+            <div class="services-right"></div>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

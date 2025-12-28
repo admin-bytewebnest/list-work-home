@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <form action="#" method="get">
+        <!-- Группировка на разделы -->
+        <fieldset>
+          <legend>Данные для имени</legend>
+          <p>
+            <label for="name">Имя</label>
+            <input value="Иван" name="name" id="name" type="text" placeholder="Введите имя" required />
+          </p>
+          <p>
+            <label for="name2">Фамилия</label>
+            <input type="text" />
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Данные для товара</legend>
+        </fieldset>
+
+        <fieldset>
+          <legend>Данные для доставки</legend>
+          <label for="email">введите почту</label>
+          <input id="email" type="email" />
+          <input type="url" name="" id="url" />
+          <label for="tel"></label>
+          <input id="tel" type="tel" />
+
+          <label for="search">Поиск</label>
+          <input id="search" type="search" />
+
+          <label for="number">Ввести возраст</label>
+          <input id="number" type="number" />
+
+          <label for="password">Ввести пароль</label>
+          <input id="password" type="password" />
+
+          <label for="date">Ввести дату</label>
+          <input id="date" type="date" />
+
+          <label for="datetime">Ввести дату и время</label>
+          <input name="datetime-local" id="datetime" type="datetime-local" />
+
+          <label for="month">Ввести месяц и год</label>
+          <input name="month" id="month" type="month" />
+
+          <label for="week">Ввести неделю</label>
+          <input name="week" id="week" type="week" />
+
+          <label for="time">Ввести время</label>
+          <input name="time" id="time" type="time" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Прочее</legend>
+          <label for="color">Выберите цвет</label>
+          <input id="color" type="color" />
+
+          <label for="file">Выберите файл</label>
+          <input id="file" type="file" multiple />
+
+          <label for="checkbox">Выберите вариант</label>
+          <input id="checkbox" type="checkbox" />
+
+          <label for="range">Выберите громкость</label>
+          <input id="renge" type="range" min="1" max="100" />
+        </fieldset>
+        <button type="submit">Отправить</button>
+      </form>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Ваш пол</legend>
+          <p>
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Муж</label>
+          </p>
+          <p>
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Жен</label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Комментарий</legend>
+          <label for="comment">Введите комментарий</label>
+          <textarea name="comment" id="comment"></textarea>
+        </fieldset>
+        <button type="submit">Отправить</button>
+
+        <!-- 06.11.2025 -->
+
+        <!-- <label for="card">Выберите пункт</label> -->
+        <select name="cards" id="card" required>
+          <option value="" selected disabled>Выберите пункт</option>
+          <option value="post-1">Первый пункт</option>
+          <option value="post-2">Второй пункт</option>
+          <option value="post-3">Третий пункт</option>
+          <optgroup label="Вторая группа">
+            <option value="post-4">Четвертый пункт</option>
+          </optgroup>
+        </select>
+
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Данные пользователя</legend>
+            <label for="lastname">Фамилия:</label>
+            <input type="text" id="lastname" />
+            <br />
+            <label for="">Имя:</label>
+            <input type="text" />
+            <br />
+            <label for="">Отчество:</label>
+            <input type="text" />
+            <br />
+            <label for="phone">Номер:</label>
+            <input type="tel" id="phone" />
+
+            <label for="year">Дата рождения</label>
+
+            <select name="" id="year">
+              <option value="">0</option>
+            </select>
+
+            <select name="" id="">
+              <option value="">Январь</option>
+            </select>
+
+            <select name="" id="">
+              <option value="">2025</option>
+            </select>
+            <br />
+            <input type="checkbox" checked required />
+            <label for="">Согласны с правилами</label>
+          </fieldset>
+          <br />
+          <button type="submit">Отправить</button>
+          <button type="reset">Очистить</button>
+        </form>
+
+        <label for="radioList">Выберите одно из</label>
+        <input type="radio" id="radioList" name="list" />
+        <input type="radio" name="list" />
+      </form>
+    </main>
+  </body>
+</html>

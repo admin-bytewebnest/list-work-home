@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <table border="1">
+      <!-- Таблица обертка -->
+      <caption>Заголовок таблицы</caption>
+      <!-- Заголовок таблицы -->
+      <thead>
+        <tr bgcolor="yellow">
+          <!-- rowspan расширяет ячейку таблицы вниз -->
+          <th rowspan="2">Номер</th>
+          <th>Название товара</th>
+          <th>Количество</th>
+          <!-- colspan расширяет таблицу -->
+          <th colspan="2">Цена</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td align="center">1</td>
+          <td>Хлеб</td>
+          <td>1</td>
+          <td>25</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Итого к оплате</td>
+          <td>25</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <table border="1" class="table">
+      <caption>Коммунальные услуги</caption>
+      <thead bgcolor="yellow">
+        <tr>
+          <th rowspan="2">Вид услуги</th>
+          <th rowspan="2">Ед. Изм.</th>
+          <th colspan="2">Объем коммунальных услуг</th>
+          <th rowspan="2">Размер оплаты</th>
+        </tr>
+        <tr>
+          <th>На индив. потреб.</th>
+          <th>На общедом. нужды</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th>Холодная вода</th>
+          <td>Куб м.</td>
+          <td>3</td>
+          <td>4</td>
+          <td>1000.00</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <th>Итого к оплате</th>
+          <td colspan="4" align="end">1000.00</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

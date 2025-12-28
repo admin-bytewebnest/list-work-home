@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header"></header>
+    <main class="main">
+      <form action="#" method="post" class="form">
+        <section class="form__title">
+          <div class="form__subtitle">
+            <p class="form__subtitle">Запрос</p>
+          </div>
+
+          <div class="form__subtitles">
+            <div class="form__subtitle-item">
+              <h2 class="form__title">Форма запроса</h2>
+              <p>Заполните форму</p>
+            </div>
+            <div class="form__subtitle-item">
+              <p class="form__subtitle">Разговор важнее</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="form__input">
+          <div>
+            <div>
+              <label for="name">Имя и фамилия</label>
+              <br />
+              <span>Как к вам обращаться</span>
+            </div>
+            <input type="text" id="name" required placeholder="Например, Александр..." />
+          </div>
+
+          <div>
+            <label for="company">Компания</label>
+            <br />
+            <input type="text" id="company" required placeholder="Компания" />
+          </div>
+
+          <div>
+            <label for="date">Дата</label>
+            <br />
+            <input type="date" id="date" required />
+          </div>
+          <label for="products">Тип проекта</label>
+          <br />
+          <select name="products" id="products">
+            <option value="" selected disabled>Тип проекта</option>
+            <option value="lending">Лендинг1</option>
+            <option value="lending2">Лендинг2</option>
+            <option value="lending3">Лендинг3</option>
+          </select>
+
+          <div>
+            <div>
+              <label for="email">email</label>
+              <span>Как к вам обращаться</span>
+            </div>
+            <input type="email" id="email" required placeholder="email" />
+          </div>
+
+          <div>
+            <label for="site">Site</label>
+            <br />
+            <input type="url" id="site" required placeholder="site" />
+          </div>
+
+          <div>
+            <label for="time">time</label>
+            <br />
+            <input type="time" id="time" required placeholder="time" />
+          </div>
+
+          <div>
+            <div>
+              <label for="name">Срочность</label>
+              <span>Как к вам обращаться</span>
+            </div>
+            <input type="range" id="name" required placeholder="Срочность" />
+          </div>
+
+          <div>
+            <div>
+              <label for="name">Telegram</label>
+              <span>По желанию</span>
+            </div>
+            <input type="tel" id="name" required placeholder="Telegram" />
+          </div>
+
+          <div>
+            <label for="search">Где узнали</label>
+            <br />
+            <input type="search" id="search" required placeholder="search" />
+          </div>
+
+          <div>
+            <label for="color">Цвет</label>
+            <br />
+            <input type="color" id="color" required placeholder="цвет" />
+          </div>
+
+          <div>
+            <div>
+              <label for="name">file</label>
+              <span>Скрины</span>
+            </div>
+            <input type="file" id="name" required placeholder="скрины" />
+          </div>
+
+          <div>
+            <div>
+              <label for="desc-up">Краткое описание</label>
+              <span>в 2-3 предложениях</span>
+            </div>
+            <textarea name="desc-up" id="desc-up" required>Текст по умолчанию</textarea>
+          </div>
+
+          <div>
+            <label for="project">Кто вы в этом проекте</label>
+            <br />
+            <label for="project1">Проект 1</label>
+            <input type="radio" id="project1" name="project" value="project1" />
+            <label for="project2">Проект 2</label>
+            <input type="radio" id="project2" name="project" value="project2" />
+            <label for="project3">Проект 3</label>
+            <input type="radio" id="project3" name="project" value="project3" />
+            <label for="project4">Проект 4</label>
+            <input type="radio" id="project4" name="project" value="project4" />
+          </div>
+
+          <div style="cursor: pointer">
+            <input type="checkbox" required value="yes" id="yes" checked style="cursor: pointer" />
+            <label for="yes">Я согласен</label>
+          </div>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.table {
+  border-collapse: collapse;
+
+  th,td {
+    border: solid 1px black;
+    height: 20px;
+  }
+}
+.table--mb-20 {
+  margin-bottom: 20px;
+}
+.caption--text-left {
+  text-align: left;
+}
+.table--padding-5 {
+  padding: 5px;
+}

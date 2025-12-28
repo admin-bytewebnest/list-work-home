@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Html tag</title>
+
+  <!-- Инлайновые стили  -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      height: 1000px;
+    }
+    .block {
+      margin-top: 700px;
+      background-color: blueviolet;
+    }
+  </style>
+
+</head>
+<body>
+
+  <noscript>Подключите Javascript</noscript>
+<script src="scripts.js"></script>
+
+
+  <!-- Помогает установить путь сайта -->
+  <!-- <base href="https://www.google.com.ua/"> -->
+  <a href="/about">about us</a>
+
+
+  <!-- Ссылка на переход на другую нашу страницу -->
+  <a href="semantic-table.html">Перейти на таблицу</a>
+
+
+  <a href="mailto@gmail.com">Отправка письма пользователю</a>
+
+
+  <a href="tel:+380688842588">+380688842588</a>
+
+
+  <a href="semantic-table.html" target="_blank">Открывает в новой вкладке</a>
+
+
+  <a href="file/file.pdf" download="file.pdf">Скачать файл</a>
+
+
+  <a href="semantic-table.html" hreflang="ua">На каком языке открывается страница на сайте</a>
+
+<!-- Безопасный переход на внешний сайт -->
+  <a href="https://google.com.ua" target="_blank" rel="noopener noreferrer">Google</a>
+
+
+  <!-- Якорные ссылки -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="#contacts">Контакты</a></li>
+      <li><a href="html/semantic-table.html#twoContacts">Контакты на другой странице</a></li>
+    </ul>
+  </nav>
+  <div class="block" id="contacts">Контакты</div>
+
+
+</body>
+</html>

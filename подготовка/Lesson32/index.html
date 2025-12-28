@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        border: 1px solid white;
+        width: 200px;
+        height: 400px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <iframe src="" frameborder="0"></iframe>
+    <video src="video/video.mp4"></video>
+    <video controls poster="poster.jpg"></video>
+    <audio src=""></audio>
+
+    <button onclick="openHelp()">Показать подсказку</button>
+    <dialog id="help">
+      <h3>Подсказка</h3>
+      <p>Сообщение пользователю</p>
+      <button onclick="closeHelp()">Закрыть</button>
+    </dialog>
+    <script>
+      function openHelp() {
+        document.getElementByld('help').showModal();
+      }
+      function closeHelp() {
+        document.getElementById('help').close();
+      }
+    </script>
+
+    <template id="card">
+      <div class="card">
+        <h3>Заголовок карточки</h3>
+        <p>Описание</p>
+      </div>
+    </template>
+    <button onclick="addCard()">Добавить карточку</button>
+
+  </body>
+</html>

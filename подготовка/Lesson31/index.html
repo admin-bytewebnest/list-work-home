@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- Подсказывает браузеру где можно сделать перенос текста -->
+  <wbr></wbr>
+
+  <p>
+    Lorem ipsum dolor sit amet. <wbr>byte</wbr><wbr>web</wbr><wbr>nest
+  </wbr>
+  </p>
+
+
+  <!-- Список выпадающий, где использовать, выбор города, выбор языка, выбор языка программирования, категория -->
+
+  <!-- Где не использовать, строгий вариант выбора,когда список маленький, критические данные, формы оплаты не безопасно -->
+  <form action="#">
+    <input list="cities" type="text" placeholder="Укажите город">
+    <datalist id="cities">
+      <option value="Киев">
+        <option value="Кривой рог">
+          <option value="Львов">
+            <option value="Одесса">
+    </datalist>
+  </form>
+
+<!-- Это индикатор выполнения процесса -->
+  <progress></progress>
+
+  <progress value="40" max="100">
+  </progress>
+
+
+  <!-- PDF файл,SVG-как объект,документация, в type указывать либо PDF или SVG -->
+  <object data="materials/guide.pdf" type="application/pdf" width="500" height="100%"></object>
+  <!-- Запасной вариант,если не загрузится файл выше,отобразится то что ниже -->
+  <!-- Когда не использовать, для обычных картинок, видео контента, аудио, другие сайты -->
+  <p>На вашем устройстве не поддерживается PDF файл</p>
+
+
+  <!-- Используется когда нужно скрыть часть информации и показать ее по запросу через клик пользователя.Open-открывает скрытое, почти не указывается -->
+  <details open>
+    <summary>
+      Показать подсказку
+    </summary>
+    <p>Используй правильные теги</p>
+  </details>
+
+</body>
+</html>

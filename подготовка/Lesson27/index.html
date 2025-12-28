@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      th,td {
+        border: solid 1px black;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <table>
+      <caption>Многоуровневая структура</caption>
+      <thead>
+        <tr>
+          <th>Тема</th>
+          <th>Тип</th>
+          <th>Цветовая схема</th>
+          <th width="400">Компоненты</th>
+          <th>Состояния</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Light Theme</td>
+          <td>Светлая</td>
+          <td>
+            <table>
+              <thead>
+                <tr>
+                  <th colspan="3">Основные цвета</th>
+                </tr>
+                <tr>
+                  <td style="background-color: white;"></td>
+                  <td style="background-color: silver;"></td>
+                  <td style="background-color: blue;"></td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="text-align: center;">Оттенки</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="3">
+                    <table style="width: 100%;">
+                      <tbody>
+                        <tr>
+                          <td>Белый</td>
+                          <td><code>#ffffff</code></td>
+                        </tr>
+                        <tr>
+                          <td>Серый</td>
+                          <td><code>#ccc</code></td>
+                        </tr>
+                        <tr>
+                          <td>Синий</td>
+                          <td><code>#2563eb</code></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+          <td>
+            <table width="100%">
+            <thead>
+              <tr>
+                <th colspan="2" style="background-color: gray;">Кнопка</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Основная</td>
+              </tr>
+            </tbody>
+          </table>
+          <table width="100%">
+            <thead>
+              <tr>
+                <th colspan="2" style="background-color: gray;">Input</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Поле ввода</td>
+              </tr>
+            </tbody>
+          </table>
+          <table width="100%">
+            <thead>
+              <tr>
+                <th colspan="2" style="background-color: gray;">Card</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Карточка</td>
+              </tr>
+            </tbody>
+          </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table>
+      <tr>
+        <td>
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2" style="background-color: gray;">Кнопка</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Основная</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2" style="background-color: gray;">Input</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Поле ввода</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2" style="background-color: gray;">Card</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Карточка</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2" style="background-color: gray;">Состояния</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="background-color: rgb(93, 93, 243);">Hover</td>
+                <td style="background-color: rgb(17, 17, 232);">Active</td>
+                <td style="background-color: rgb(44, 44, 178);">Disabled</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2" style="background-color: gray;">Состояния</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="background-color: rgb(246, 246, 248);">Normal</td>
+                <td style="background-color: rgb(93, 93, 94);">Focused</td>
+                <td style="background-color: rgb(109, 109, 110);">Disabled</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2" style="background-color: gray;">Состояния</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="background-color: rgb(246, 246, 248);">Default</td>
+                <td style="background-color: rgb(195, 195, 197);">Hover</td>
+                <td style="background-color: rgb(204, 204, 207);">Selected</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+
+    </table>
+
+  </main>
+</body>
+</html>
